@@ -1,5 +1,5 @@
 $(function() {
-    Parse.initialize("FmV3YOjLSZQxyMxjFryIo72YyLtLFgKJoXcUNDbX", "xU0AIrndO8OAcA3ZvBjjuoML4eIEBRpOdSsO3r0z");
+    Parse.initialize("hIvxwhUFjYfjWMn0e0cGoG8PuMWlFhDzKQcyanAn", "kM82dBDl28jw7SYZ7CXnZ1KI2cpfrMOjA1lU6TWf");
 
 
     var row = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
