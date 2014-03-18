@@ -36,7 +36,13 @@
                 </ul>
                 <h3 class="text-muted">hundred square grid</h3>
             </div>
-
+            <input class="form-control js-name" placeholder="name" type="text">
+            <input class="form-control js-username" placeholder="username" type="text">
+            <input class="form-control js-password" placeholder="password" type="text">
+            <input class="form-control js-email" placeholder="email" type="text">
+            <input class="form-control js-leaguename" placeholder="league name" type="text">
+            <input class="form-control js-leaguepassword" placeholder="league password" type="text">
+            <button type="button" class="btn btn-primary submit-button">Submit</button>
             <div class="jumbotron">
                 
             </div>
@@ -51,6 +57,11 @@
         </div>
 
 
+        <script type="text/template" id='box-template'>
+           
+        </script>
+
+
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/jquery.js"></script>
@@ -59,6 +70,9 @@
         <!-- endbower -->
         <!-- endbuild -->
         <script src="//www.parsecdn.com/js/parse-1.2.18.min.js"></script>
+
+        
+
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -86,6 +100,9 @@
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/user.js"></script>
+        <script src="scripts/league.js"></script>
+        <script src="scripts/box-view.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>

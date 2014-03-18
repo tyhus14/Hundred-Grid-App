@@ -1,21 +1,20 @@
-var BoxView = Parse.View.extend({
+// var BoxView = Parse.View.extend({
 
-    className: 'item-list-js',
+//     className: '',
 
-    itemTemplate: _.template($('#item-template').text()),
+//     boxTemplate: _.template($('#box-template').text()),
 
 
-    initialize: function() {
-        $('.jumbotron').prepend(this.el);
-        this.render()
-    },
+//     initialize: function() {
+//         $('.jumbotron').prepend(this.el);
+//         this.render()
+//     },
 
-    render: function() {
-        console.log('hi')
-        var itemRenderedTemplate = this.itemTemplate({
-            model: this.model
-        });
-        this.$el.html(itemRenderedTemplate);
-    }
+//     render: function() {
+//         var boxRenderedTemplate = this.boxTemplate({
+//             model: this.model
+//         });
+//         this.$el.html(boxRenderedTemplate);
+//     }
 
-})
+// })
