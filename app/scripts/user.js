@@ -18,7 +18,7 @@ $('.submit-button').click(function() {
             alert("Error: " + error.code + " " + error.message);
         }
 
-
     });
+
 
 })

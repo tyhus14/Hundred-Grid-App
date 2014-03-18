@@ -1,5 +1,5 @@
-// var Info = Parse.Object.extend("user")
+var User = Parse.Object.extend("User")
 
-// var League = Parse.Collection.extend({
-//     model: Info
-// })
+var UserCollection = Parse.Collection.extend({
+    model: User
+})
