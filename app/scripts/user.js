@@ -6,8 +6,6 @@ $('.submit-button').click(function() {
     user.set("username", $('.js-username').val());
     user.set("password", $('.js-password').val());
     user.set("email", $('.js-email').val());
-    user.set("leaguename", $('.js-leaguename').val());
-    user.set("leaguepassword", $('.js-leaguepassword').val());
 
     user.signUp(null, {
         success: function(user) {

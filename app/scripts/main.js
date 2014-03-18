@@ -9,7 +9,7 @@ $(function() {
     users.fetch({
         success: function() {
             users.each(function(item) {
-                new BoxView({
+                new ListView({
                     model: item
                 });
             })

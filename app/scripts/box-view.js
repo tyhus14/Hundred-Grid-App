@@ -1,8 +1,8 @@
-var BoxView = Parse.View.extend({
+var ListView = Parse.View.extend({
 
     className: '',
 
-    boxTemplate: _.template($('#box-template').text()),
+    boxTemplate: _.template($('#list-template').text()),
 
 
     initialize: function() {
