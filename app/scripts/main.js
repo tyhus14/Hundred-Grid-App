@@ -1,21 +1,24 @@
 $(function() {
     Parse.initialize("hIvxwhUFjYfjWMn0e0cGoG8PuMWlFhDzKQcyanAn", "kM82dBDl28jw7SYZ7CXnZ1KI2cpfrMOjA1lU6TWf");
 
+    new MainView();
 
     window.users = new UserCollection();
 
 
 
-    users.fetch({
-        success: function() {
-            users.each(function(item) {
-                new ListView({
-                    model: item
-                });
-            })
-        },
+    // users.fetch({
+    //     success: function() {
+    //         users.each(function(user) {
+    //             new ListView({
+    //                 model: user
+    //             });
+    //         })
+    //     },
 
-    })
+    // })
+
+
 
     var row = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
     var column = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];

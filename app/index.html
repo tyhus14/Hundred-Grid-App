@@ -31,11 +31,7 @@
             <div class="header">
                 <h3 class="text-muted">hundred square grid</h3>
             </div>
-            <input class="form-control js-name" placeholder="name" type="text">
-            <input class="form-control js-username" placeholder="username" type="text">
-            <input class="form-control js-password" placeholder="password" type="text">
-            <input class="form-control js-email" placeholder="email" type="text">
-            <button type="button" class="btn btn-primary submit-button">Submit</button>
+            
             <div class="jumbotron">
                 
             </div>
@@ -49,6 +45,17 @@
 
         </div>
 
+        <script type="text/template" id='main-template'>
+            <button type="button" class="btn btn-primary create-league-btn">create league</button>
+        </script>
+
+        <script type="text/template" id='createleague-template'>
+            <input class="form-control js-name" placeholder="name" type="text">
+            <input class="form-control js-username" placeholder="username" type="text">
+            <input class="form-control js-password" placeholder="password" type="text">
+            <input class="form-control js-email" placeholder="email" type="text">
+            <button type="button" class="btn btn-primary submit-button">Submit</button>
+        </script>
 
         <script type="text/template" id='list-template'>
             <p> <%= model.get('username') %></p>
@@ -93,6 +100,8 @@
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main-view.js"></script>
+        <script src="scripts/createleague-view.js"></script>
         <script src="scripts/user.js"></script>
         <script src="scripts/league.js"></script>
         <script src="scripts/box-view.js"></script>
