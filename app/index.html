@@ -33,7 +33,7 @@
             </div>
             
             <div class="jumbotron">
-                
+                <div class="board"></div>
             </div>
 
             <div class="row marketing">
@@ -69,9 +69,13 @@
             <p> <%= username %></p>
         </script>
 
-        <script type="text/template" id='game-template'>
-            <button type="button" class="btn btn-primary logout-btn">Logout</button>
+        <script type="text/template" id='board-template'>
         </script>
+
+        <script type="text/template" id='game-template'>
+        </script>
+        <!--<button type="button" class="btn btn-primary logout-btn">Logout</button>-->
+
 
 
         <!-- build:js scripts/vendor.js -->
@@ -119,6 +123,7 @@
         <script src="scripts/league.js"></script>
         <script src="scripts/list-view.js"></script>
         <script src="scripts/game-view.js"></script>
+        <script src="scripts/board-view.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>

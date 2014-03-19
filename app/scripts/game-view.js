@@ -1,6 +1,6 @@
 var GameView = Parse.View.extend({
 
-    className: '',
+    className: 'gameview',
 
     gameTemplate: _.template($('#game-template').text()),
 
@@ -9,8 +9,36 @@ var GameView = Parse.View.extend({
     },
 
     initialize: function() {
-        $('.jumbotron').html(this.el);
+        $('.board').html(this.el);
         this.render();
+
+        var row = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
+        var column = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
+
+        _.each(aArray, function() {
+            new BoardView();
+        });
+        _.each(bArray, function() {
+            new BoardView();
+        });
+        _.each(cArray, function() {
+            new BoardView();
+        });
+        _.each(dArray, function() {
+            new BoardView();
+        });
+        _.each(eArray, function() {
+            new BoardView();
+        });
+        _.each(hArray, function() {
+            new BoardView();
+        });
+        _.each(iArray, function() {
+            new BoardView();
+        });
+        _.each(jArray, function() {
+            new BoardView();
+        });
     },
 
     render: function() {
@@ -25,4 +53,5 @@ var GameView = Parse.View.extend({
 
         // var currentUser = Parse.User.current();
     }
+
 });
