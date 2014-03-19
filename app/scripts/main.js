@@ -3,7 +3,7 @@ $(function() {
 
     new MainView();
 
-    window.users = new UserCollection();
+    // window.users = new UserCollection();
 
 
 

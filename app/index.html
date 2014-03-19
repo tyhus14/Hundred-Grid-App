@@ -47,6 +47,7 @@
 
         <script type="text/template" id='main-template'>
             <button type="button" class="btn btn-primary create-league-btn">create league</button>
+            <button type="button" class="btn btn-primary signin-btn">sign in</button>
         </script>
 
         <script type="text/template" id='createleague-template'>
@@ -54,7 +55,13 @@
             <input class="form-control js-username" placeholder="username" type="text">
             <input class="form-control js-password" placeholder="password" type="text">
             <input class="form-control js-email" placeholder="email" type="text">
-            <button type="button" class="btn btn-primary submit-button">Submit</button>
+            <button type="button" class="btn btn-primary submit-btn">Submit</button>
+        </script>
+
+        <script type="text/template" id='signin-template'>
+            <input class="form-control login-username-js" placeholder="username" type="text">
+            <input class="form-control login-password-js" placeholder="password" type="text">
+            <button type="button" class="btn btn-primary submit-sigin-button">Submit</button>
         </script>
 
         <script type="text/template" id='list-template'>
@@ -102,6 +109,7 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main-view.js"></script>
         <script src="scripts/createleague-view.js"></script>
+        <script src="scripts/signin-view.js"></script>
         <script src="scripts/user.js"></script>
         <script src="scripts/league.js"></script>
         <script src="scripts/box-view.js"></script>

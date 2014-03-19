@@ -5,7 +5,8 @@ var MainView = Parse.View.extend({
     mainTemplate: _.template($('#main-template').text()),
 
     events: {
-        'click .create-league-btn': 'CreateLeagueView'
+        'click .create-league-btn': 'CreateLeagueView',
+        'click .signin-btn': 'CreateSigninView'
     },
 
 
@@ -23,6 +24,11 @@ var MainView = Parse.View.extend({
 
     CreateLeagueView: function() {
         new CreateLeagueView();
+    },
+
+    CreateSigninView: function() {
+        new SigninView();
     }
+
 
 });
