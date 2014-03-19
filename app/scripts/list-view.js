@@ -6,7 +6,7 @@ var ListView = Parse.View.extend({
 
 
     initialize: function() {
-        $('.jumbotron').prepend(this.el);
+        $('.jumbotron').html(this.el);
         this.render()
     },
 

@@ -30,6 +30,8 @@ var SigninView = Parse.View.extend({
                 // The login failed. Check error to see why.
             }
         });
+
+        new GameView();
     }
 
 });
