@@ -6,7 +6,8 @@ var MainView = Parse.View.extend({
 
     events: {
         'click .create-league-btn': 'CreateLeagueView',
-        'click .signin-btn': 'CreateSigninView'
+        'click .signin-btn': 'CreateSigninView',
+        'click .quickstart-btn': 'CreateGameView'
     },
 
 
@@ -28,6 +29,10 @@ var MainView = Parse.View.extend({
 
     CreateSigninView: function() {
         new SigninView();
+    },
+
+    CreateGameView: function() {
+        new GameView();
     }
 
 
