@@ -14,30 +14,62 @@ var GameView = Parse.View.extend({
 
         var row = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
         var column = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
+        // _.each(board, function() {
+        //     new BoardView();
+        // })
 
-        _.each(aArray, function() {
-            new BoardView();
+        _.each(aArray, function(item) {
+            new BoardView({
+                model: item
+            });
         });
-        _.each(bArray, function() {
-            new BoardView();
+        _.each(bArray, function(item) {
+            new BoardView({
+                model: item
+            });
         });
-        _.each(cArray, function() {
-            new BoardView();
+        _.each(cArray, function(item) {
+            new BoardView({
+                model: item
+            });
         });
-        _.each(dArray, function() {
-            new BoardView();
+        _.each(dArray, function(item) {
+            new BoardView({
+                model: item
+            });
         });
-        _.each(eArray, function() {
-            new BoardView();
+        _.each(eArray, function(item) {
+            new BoardView({
+                model: item
+            });
         });
-        _.each(hArray, function() {
-            new BoardView();
+
+        _.each(fArray, function(item) {
+            new BoardView({
+                model: item
+            });
         });
-        _.each(iArray, function() {
-            new BoardView();
+
+        _.each(gArray, function(item) {
+            new BoardView({
+                model: item
+            });
         });
-        _.each(jArray, function() {
-            new BoardView();
+
+        _.each(hArray, function(item) {
+            new BoardView({
+                model: item
+            });
+        });
+        _.each(iArray, function(item) {
+            new BoardView({
+                model: item
+            });
+        });
+        _.each(jArray, function(item) {
+            new BoardView({
+                model: item
+            });
         });
     },
 

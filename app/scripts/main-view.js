@@ -7,7 +7,8 @@ var MainView = Parse.View.extend({
     events: {
         'click .create-league-btn': 'CreateLeagueView',
         'click .signin-btn': 'CreateSigninView',
-        'click .quickstart-btn': 'CreateGameView'
+        'click .quickstart-btn': 'CreateGameView',
+        'click .generate-numbers': 'Generate',
     },
 
 
@@ -33,6 +34,13 @@ var MainView = Parse.View.extend({
 
     CreateGameView: function() {
         new GameView();
+    },
+
+    Generate: function() {
+        var numberBefore = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        var numberTwoBefore = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        rowNumber = _.shuffle(numberBefore);
+        columnNumber = _.shuffle(numberTwoBefore);
     }
 
 

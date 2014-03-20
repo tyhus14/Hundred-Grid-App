@@ -46,9 +46,10 @@
         </div>
 
         <script type="text/template" id='main-template'>
-            <button type="button" class="btn btn-primary quickstart-btn">quick start</button>
+            <a class="btn btn-lg" href="#quickstart"><button type="button" class="btn btn-primary quickstart-btn">quick start</button></a>
             <button type="button" class="btn btn-primary create-league-btn">create league</button>
             <button type="button" class="btn btn-primary signin-btn">sign in</button>
+            <button type="button" class="btn btn-primary generate-numbers">Generate Numbers</button>
         </script>
 
         <script type="text/template" id='createleague-template'>
@@ -70,6 +71,7 @@
         </script>
 
         <script type="text/template" id='board-template'>
+            <%=this.model%>
         </script>
 
         <script type="text/template" id='game-template'>
@@ -116,6 +118,7 @@
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/routes.js"></script>
         <script src="scripts/main-view.js"></script>
         <script src="scripts/createleague-view.js"></script>
         <script src="scripts/signin-view.js"></script>
