@@ -95,13 +95,22 @@ body {
  .box { 
     width: 40px;
     height: 40px;
-    background: blue;
+    background: rgb(75, 216, 252);
     border: 1px solid black;
     display: inline-block;
  }
 
  .board {
     width: 420px;
+ }
+
+ .name-input {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    font-size: 10px;
+    text-align: center;
  }
 
 
