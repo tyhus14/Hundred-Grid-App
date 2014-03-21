@@ -31,6 +31,8 @@ $(function() {
     // })
 
 
+    var rowNumber = _.shuffle([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
+    var columnNumber = _.shuffle([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
 
     var row = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
     var column = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
@@ -43,7 +45,51 @@ $(function() {
 
 
 
+    // Number Arrays
+    window.zeroArray = _.map(rowNumber, function(num) {
+        return columnNumber[0] + '' + num
+    });
 
+    window.oneArray = _.map(rowNumber, function(num) {
+        return columnNumber[1] + '' + num
+    });
+
+    window.twoArray = _.map(rowNumber, function(num) {
+        return columnNumber[2] + '' + num
+    });
+
+    window.threeArray = _.map(rowNumber, function(num) {
+        return columnNumber[3] + '' + num
+    });
+
+    window.fourArray = _.map(rowNumber, function(num) {
+        return columnNumber[4] + '' + num
+    });
+
+    window.fiveArray = _.map(rowNumber, function(num) {
+        return columnNumber[5] + '' + num
+    });
+
+    window.sixArray = _.map(rowNumber, function(num) {
+        return columnNumber[6] + '' + num
+    });
+
+    window.sevenArray = _.map(rowNumber, function(num) {
+        return columnNumber[7] + '' + num
+    });
+
+    window.eightArray = _.map(rowNumber, function(num) {
+        return columnNumber[8] + '' + num
+    });
+
+    window.nineArray = _.map(rowNumber, function(num) {
+        return columnNumber[9] + '' + num
+    });
+
+
+
+
+    // Letter Arrays
 
     window.aArray = _.map(row, function(num) {
         return column[0] + '' + num

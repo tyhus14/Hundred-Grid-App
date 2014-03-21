@@ -37,10 +37,7 @@ var MainView = Parse.View.extend({
     },
 
     Generate: function() {
-        var numberBefore = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-        var numberTwoBefore = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-        rowNumber = _.shuffle(numberBefore);
-        columnNumber = _.shuffle(numberTwoBefore);
+        new numberGameView();
     }
 
 

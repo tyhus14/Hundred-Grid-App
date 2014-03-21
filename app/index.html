@@ -33,7 +33,9 @@
             </div>
             
             <div class="jumbotron">
-                <div class="board"></div>
+                <div class="board">
+                </div>
+                    <div class="board-inside"></div>
             </div>
 
             <div class="row marketing">
@@ -77,6 +79,15 @@
 
         <script type="text/template" id='game-template'>
         </script>
+
+        <script type="text/template" id='numberbox-template'>
+            <p> <%= this.model %></p>
+        </script>
+        
+        <script type="text/template" id='numbergame-template'>
+          
+        </script>
+        
         <!--<button type="button" class="btn btn-primary logout-btn">Logout</button>-->
 
 
@@ -126,6 +137,8 @@
         <script src="scripts/user.js"></script>
         <script src="scripts/league.js"></script>
         <script src="scripts/list-view.js"></script>
+        <script src="scripts/number-box-view.js"></script>
+        <script src="scripts/number-game-view.js"></script>
         <script src="scripts/game-view.js"></script>
         <script src="scripts/board-view.js"></script>
         <script src="scripts/main.js"></script>
