@@ -103,8 +103,8 @@ body {
 
  .board {
     width: 420px;
-    height: 400px;
-    background: red;
+    height: 420px;  
+    position: absolute;
  }
 
  .name-input {
@@ -119,14 +119,13 @@ body {
 .number-box {
     width: 40px;
     height: 40px;
-    background: blue;
     display: inline-block;
 }
 
 .board-inside {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background: black;
+    width: 420px;
+    height: 420px;
+    display: none;
 }
 

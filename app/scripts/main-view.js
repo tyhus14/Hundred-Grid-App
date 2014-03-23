@@ -38,6 +38,7 @@ var MainView = Parse.View.extend({
 
     Generate: function() {
         new numberGameView();
+        $(".board-inside").show()
     }
 
 

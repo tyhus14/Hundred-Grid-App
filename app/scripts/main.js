@@ -4,7 +4,6 @@ $(function() {
     new MainView();
 
 
-
     currentUser = Parse.User.current();
     if (currentUser) {
         // do stuff with the user
@@ -12,11 +11,7 @@ $(function() {
         // show the signup or login page
     }
 
-
-
-
     // window.users = new UserCollection();
-
 
 
     // users.fetch({
@@ -36,13 +31,6 @@ $(function() {
 
     var row = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
     var column = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
-
-    // var rowone = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-    // var columnone = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-    // var column = _.shuffle(columnone)
-    // var row = _.shuffle(rowone)
-
 
 
     // Number Arrays
@@ -87,8 +75,6 @@ $(function() {
     });
 
 
-
-
     // Letter Arrays
 
     window.aArray = _.map(row, function(num) {
@@ -130,11 +116,5 @@ $(function() {
     window.jArray = _.map(row, function(num) {
         return column[9] + '' + num
     });
-
-
-
-
-
-
 
 })

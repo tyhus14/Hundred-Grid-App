@@ -5,7 +5,7 @@ var numberBoxView = Parse.View.extend({
     numberBoxTemplate: _.template($('#numberbox-template').text()),
 
     initialize: function() {
-        $('.jumbotron').append(this.el);
+        $('.board-inside').append(this.el);
         this.render()
     },
 

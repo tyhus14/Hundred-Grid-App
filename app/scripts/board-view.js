@@ -5,7 +5,7 @@ var BoardView = Parse.View.extend({
     boardTemplate: _.template($('#board-template').text()),
 
     initialize: function() {
-        $('.jumbotron').append(this.el);
+        $('.board').append(this.el);
         this.render()
     },
 
