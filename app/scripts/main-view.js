@@ -7,8 +7,6 @@ var MainView = Parse.View.extend({
     events: {
         'click .create-league-btn': 'CreateLeagueView',
         'click .signin-btn': 'CreateSigninView',
-        'click .quickstart-btn': 'CreateGameView',
-        'click .generate-numbers': 'Generate',
     },
 
 
@@ -31,15 +29,5 @@ var MainView = Parse.View.extend({
     CreateSigninView: function() {
         new SigninView();
     },
-
-    CreateGameView: function() {
-        new GameView();
-    },
-
-    Generate: function() {
-        new numberGameView();
-        $(".board-inside").show()
-    }
-
 
 });

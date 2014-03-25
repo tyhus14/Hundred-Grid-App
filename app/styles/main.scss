@@ -67,7 +67,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 560px;
+        max-width: 960px;
     }
 
     /* Remove the padding we set earlier */
@@ -93,8 +93,8 @@ body {
  /* My stuff */
 
  .box { 
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     background: #CBEEF7;
     border: 1px solid black;
     display: inline-block;
@@ -102,30 +102,49 @@ body {
  }
 
  .board {
-    width: 420px;
-    height: 420px;  
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 800px;
+    height: 800px;  
     position: absolute;
+    display: inline-block;
  }
 
  .name-input {
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     background: none;
     border: none;
-    font-size: 10px;
+    font-size: 20px;
     text-align: center;
  }
 
 .number-box {
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     display: inline-block;
 }
 
 .board-inside {
+    margin-top: 50px;
+    margin-left: 40px;
     position: absolute;
-    width: 420px;
-    height: 420px;
+    width: 800px;
+    height: 800px;
     display: none;
 }
 
+.row-numbers {
+    height: 40px;
+    width: 50px;
+    display: inline-block;
+    position: relative;
+}
+
+.visual-numbers {
+    margin-top: 60px;
+    p {
+        font-size: 40px;
+        margin: 0 0 23px;
+    }
+}

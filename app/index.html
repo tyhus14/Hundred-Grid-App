@@ -34,24 +34,17 @@
             
             <div class="jumbotron">
             </div>
-                <div class="board">
-                </div>
-                    <div class="board-inside"></div>
+            <div class="board"></div>
+            <div class="board-inside"></div>
+            <div class="row-numbers"></div>
 
-            <div class="row marketing">
-               
-            </div>
-
-            <div class="footer">
-            </div>
+           
 
         </div>
 
         <script type="text/template" id='main-template'>
-            <a class="btn btn-lg" href="#quickstart"><button type="button" class="btn btn-primary quickstart-btn">quick start</button></a>
-            <button type="button" class="btn btn-primary create-league-btn">create league</button>
-            <button type="button" class="btn btn-primary signin-btn">sign in</button>
-            <button type="button" class="btn btn-primary generate-numbers">Generate Numbers</button>
+            <a class="btn btn-lg" href="#board"><button type="button" class="btn btn-primary quickstart-btn">quick start</button></a>
+            
         </script>
 
         <script type="text/template" id='createleague-template'>
@@ -72,12 +65,13 @@
             <p> <%= username %></p>
         </script>
 
-        <script type="text/template" id='board-template'>
-           
+        <script type="text/template" id='board-template'>   
             <input class="name-input" type="text">
         </script>
 
         <script type="text/template" id='game-template'>
+            <button type="button" class="btn btn-primary generate-numbers">Generate Numbers</button>
+
         </script>
 
         <script type="text/template" id='numberbox-template'>
@@ -87,6 +81,23 @@
         <script type="text/template" id='numbergame-template'>
           
         </script>
+
+        <script type="text/template" id='visualNumbers-template'>
+          <p> <%= columnNumber[0] %></p>
+          <p> <%= columnNumber[1] %></p>
+          <p> <%= columnNumber[2] %></p>
+          <p> <%= columnNumber[3] %></p>
+          <p> <%= columnNumber[4] %></p>
+          <p> <%= columnNumber[5] %></p>
+          <p> <%= columnNumber[6] %></p>
+          <p> <%= columnNumber[7] %></p>
+          <p> <%= columnNumber[8] %></p>
+          <p> <%= columnNumber[9] %></p>
+
+        </script>
+
+
+        
         
         <!--<button type="button" class="btn btn-primary logout-btn">Logout</button>-->
 
@@ -131,6 +142,7 @@
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/routes.js"></script>
+        <script src="scripts/visual-numbers-view.js"></script>
         <script src="scripts/main-view.js"></script>
         <script src="scripts/createleague-view.js"></script>
         <script src="scripts/signin-view.js"></script>
