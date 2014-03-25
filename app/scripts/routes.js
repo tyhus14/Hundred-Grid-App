@@ -101,8 +101,12 @@ var MainRouter = Backbone.Router.extend({
             return column[9] + '' + num
         });
 
+
+
         lettersArray = _.union(aArray, bArray, cArray, dArray, eArray, fArray, gArray, hArray, iArray, jArray)
-        allBoxes = _.object(lettersArray, numbersArray);
+        allBoxes = _.zip(lettersArray, numbersArray);
+        boxObject = _.object(allBoxes)
+
         new GameView();
         fastleague = new Quickleague();
 
