@@ -14,10 +14,11 @@ var GameView = Parse.View.extend({
         this.render();
 
 
-        _.each(lettersArray, function(item) {
+        _.each(allBoxes, function(item) {
             new BoardView({
                 model: item
             });
+
         });
 
     },
