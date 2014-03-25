@@ -8,6 +8,8 @@ var QuickLeagueCollection = Parse.Collection.extend({
 
 
 
+
+
 // var Player = Parse.Object.extend("Players");
 
 // var PlayersCollection = Parse.Collection.extend({

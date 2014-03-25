@@ -66,16 +66,15 @@
         </script>
 
         <script type="text/template" id='board-template'>   
-            <input class="name-input" type="text">
+            <input class="name-input" type="text" value="<%= data.name ? data.name : '' %>">
         </script>
 
         <script type="text/template" id='game-template'>
             <button type="button" class="btn btn-primary generate-numbers">Generate Numbers</button>
-
         </script>
 
         <script type="text/template" id='numberbox-template'>
-            <p> <%= this.model %></p>
+            <p> <%= data.score %></p>
         </script>
         
         <script type="text/template" id='numbergame-template'>

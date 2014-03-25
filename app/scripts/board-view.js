@@ -4,16 +4,28 @@ var BoardView = Parse.View.extend({
 
     boardTemplate: _.template($('#board-template').text()),
 
-    initialize: function() {
+    events: {
+        "blur .name-input": "addName",
+    },
+
+    initialize: function(options) {
+        this.data = options.data;
+
         $('.board').append(this.el);
         this.render()
     },
 
     render: function() {
         var boardRenderedTemplate = this.boardTemplate({
-            model: this.model
+            data: this.data
         });
         this.$el.html(boardRenderedTemplate);
     },
+
+    addName: function() {
+        console.log('cool')
+        console.log('this.data is', this.data)
+        this.data.name = this.$el.find('.name-input').val();
+    }
 
 });

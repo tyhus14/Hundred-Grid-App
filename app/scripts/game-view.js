@@ -14,9 +14,9 @@ var GameView = Parse.View.extend({
         this.render();
 
 
-        _.each(allBoxes, function(item) {
+        _.each(objectBoxes, function(item) {
             new BoardView({
-                model: item
+                data: item
             });
 
         });
@@ -34,6 +34,7 @@ var GameView = Parse.View.extend({
         new numberGameView();
         $(".board-inside").show();
         new visualNumbersView();
+
     },
 
     LogOut: function() {
