@@ -24,8 +24,9 @@ var BoardView = Parse.View.extend({
 
     addName: function() {
         console.log('cool')
-        console.log('this.data is', this.data)
         this.data.name = this.$el.find('.name-input').val();
+        console.log('this.data is', this.data)
+        fastleague.save()
     }
 
 });
