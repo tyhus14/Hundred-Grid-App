@@ -74,6 +74,7 @@ $(function() {
         return columnNumber[9] + '' + num
     });
 
+    numbersArray = _.union(zeroArray, oneArray, twoArray, threeArray, fourArray, fiveArray, sixArray, sevenArray, eightArray, nineArray)
 
     // Letter Arrays
 
@@ -116,5 +117,7 @@ $(function() {
     jArray = _.map(row, function(num) {
         return column[9] + '' + num
     });
+
+    lettersArray = _.union(aArray, bArray, cArray, dArray, eArray, fArray, gArray, hArray, iArray, jArray)
 
 })

@@ -13,65 +13,13 @@ var GameView = Parse.View.extend({
         $('.board').html(this.el);
         this.render();
 
-        // var row = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
-        // var column = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
-        // _.each(board, function() {
-        //     new BoardView();
-        // })
 
-        _.each(aArray, function(item) {
-            new BoardView({
-                model: item
-            });
-        });
-        _.each(bArray, function(item) {
-            new BoardView({
-                model: item
-            });
-        });
-        _.each(cArray, function(item) {
-            new BoardView({
-                model: item
-            });
-        });
-        _.each(dArray, function(item) {
-            new BoardView({
-                model: item
-            });
-        });
-        _.each(eArray, function(item) {
+        _.each(lettersArray, function(item) {
             new BoardView({
                 model: item
             });
         });
 
-        _.each(fArray, function(item) {
-            new BoardView({
-                model: item
-            });
-        });
-
-        _.each(gArray, function(item) {
-            new BoardView({
-                model: item
-            });
-        });
-
-        _.each(hArray, function(item) {
-            new BoardView({
-                model: item
-            });
-        });
-        _.each(iArray, function(item) {
-            new BoardView({
-                model: item
-            });
-        });
-        _.each(jArray, function(item) {
-            new BoardView({
-                model: item
-            });
-        });
     },
 
     render: function() {
