@@ -8,12 +8,11 @@ var numberGameView = Parse.View.extend({
         $('.board-inside').html(this.el);
         this.render();
 
-        _.each(numbersArray, function(item) {
-            new numberBoxView({
-                model: item
-            });
-        });
-
+        // _.each(numbersArray, function(item) {
+        //     new numberBoxView({
+        //         model: item
+        //     });
+        // });
     },
 
     render: function() {
