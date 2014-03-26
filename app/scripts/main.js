@@ -11,6 +11,11 @@ $(function() {
     currentUser = Parse.User.current();
 
 
+    gameScore = "34";
+
+
+
+
     // window.users = new UserCollection();
 
 

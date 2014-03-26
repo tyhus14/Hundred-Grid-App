@@ -141,9 +141,25 @@ body {
 }
 
 .visual-numbers {
-    margin-top: 60px;
+    margin-top: 32px;
     p {
         font-size: 40px;
         margin: 0 0 23px;
     }
 }
+
+.visual-numbers-top {
+    
+    p {
+        margin: 0 53px 0px 0;
+        display: inline;
+        font-size: 40px;
+    }
+}
+
+.visual-row-numbers {
+    display: inline;
+    margin-left: 70px;
+}
+
+

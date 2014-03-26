@@ -5,9 +5,11 @@ var MainView = Parse.View.extend({
     mainTemplate: _.template($('#main-template').text()),
 
     events: {
-        'click .create-league-btn': 'CreateLeagueView',
-        'click .signin-btn': 'CreateSigninView',
+    //     'click .create-league-btn': 'CreateLeagueView',
+    //     'click .signin-btn': 'CreateSigninView',
+    'click .generate-numbers': 'Generate'
     },
+
 
 
     initialize: function() {
@@ -22,12 +24,19 @@ var MainView = Parse.View.extend({
         this.$el.html(mainRenderedTemplate);
     },
 
-    CreateLeagueView: function() {
-        new CreateLeagueView();
+    Generate: function() {
+        new numberGameView();
+        $(".board-inside").show();
+        new visualNumbersView();
+        new visualNumbersTopView();
     },
 
-    CreateSigninView: function() {
-        new SigninView();
-    },
+    // CreateLeagueView: function() {
+    //     new CreateLeagueView();
+    // },
+
+    // CreateSigninView: function() {
+    //     new SigninView();
+    // },
 
 });

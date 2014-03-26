@@ -51,6 +51,7 @@ var MainRouter = Backbone.Router.extend({
                 alert('Failed to create new object, with error code: ' + error.description);
             }
         });
+
     },
 
 });

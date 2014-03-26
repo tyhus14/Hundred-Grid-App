@@ -32,8 +32,8 @@
                 <h3 class="text-muted">hundred square grid</h3>
             </div>
             
-            <div class="jumbotron">
-            </div>
+            <div class="jumbotron"></div>
+            <div class="column-numbers"></div>
             <div class="board"></div>
             <div class="board-inside"></div>
             <div class="row-numbers"></div>
@@ -44,7 +44,7 @@
 
         <script type="text/template" id='main-template'>
             <a class="btn btn-lg" href="#board"><button type="button" class="btn btn-primary quickstart-btn">quick start</button></a>
-            
+            <button type="button" class="btn btn-primary generate-numbers">Generate Numbers</button>
         </script>
 
         <script type="text/template" id='createleague-template'>
@@ -70,7 +70,7 @@
         </script>
 
         <script type="text/template" id='game-template'>
-            <button type="button" class="btn btn-primary generate-numbers">Generate Numbers</button>
+            
         </script>
 
         <script type="text/template" id='numberbox-template'>
@@ -92,7 +92,21 @@
           <p> <%= columnNumber[7] %></p>
           <p> <%= columnNumber[8] %></p>
           <p> <%= columnNumber[9] %></p>
+        </script>
 
+        <script type="text/template" id='visualNumbersTop-template'>
+        <div class="visual-row-numbers">
+          <p> <%= rowNumber[0] %></p>
+          <p> <%= rowNumber[1] %></p>
+          <p> <%= rowNumber[2] %></p>
+          <p> <%= rowNumber[3] %></p>
+          <p> <%= rowNumber[4] %></p>
+          <p> <%= rowNumber[5] %></p>
+          <p> <%= rowNumber[6] %></p>
+          <p> <%= rowNumber[7] %></p>
+          <p> <%= rowNumber[8] %></p>
+          <p> <%= rowNumber[9] %></p>
+       </div>
         </script>
 
 
@@ -142,6 +156,7 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/routes.js"></script>
         <script src="scripts/visual-numbers-view.js"></script>
+        <script src="scripts/visual-numbers-top-view.js"></script>
         <script src="scripts/main-view.js"></script>
         <script src="scripts/createleague-view.js"></script>
         <script src="scripts/signin-view.js"></script>

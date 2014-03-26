@@ -6,7 +6,7 @@ var GameView = Parse.View.extend({
 
     events: {
         'click .logout-btn': 'LogOut',
-        'click .generate-numbers': 'Generate'
+
     },
 
     initialize: function() {
@@ -30,11 +30,7 @@ var GameView = Parse.View.extend({
         this.$el.html(gameRenderedTemplate);
     },
 
-    Generate: function() {
-        new numberGameView();
-        $(".board-inside").show();
-        new visualNumbersView();
-    },
+
 
     LogOut: function() {
         Parse.User.logOut();
