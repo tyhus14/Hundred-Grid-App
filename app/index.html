@@ -44,7 +44,7 @@
 
         <script type="text/template" id='main-template'>
             <a class="btn btn-lg" href="#board"><button type="button" class="btn btn-primary quickstart-btn">quick start</button></a>
-            <button type="button" class="btn btn-primary generate-numbers">Generate Numbers</button>
+            
         </script>
 
         <script type="text/template" id='createleague-template'>
@@ -61,8 +61,15 @@
             <button type="button" class="btn btn-primary submit-sigin-button">Submit</button>
         </script>
 
+        <script type="text/template" id='play-view-template'>
+            <button type="button" class="btn btn-primary play-game"><a class="btn btn-lg" href="#board">Play</a></button>
+        </script>
+
+        <script type="text/template" id='start-view-template'>
+            <button type="button" class="btn btn-primary generate-numbers">Generate Numbers</button>
+        </script>
         <script type="text/template" id='list-template'>
-            <p> <%= username %></p>
+            <p>Current winner is <%= currentWinner[0].name %></p>
         </script>
 
         <script type="text/template" id='board-template'>   
@@ -70,7 +77,7 @@
         </script>
 
         <script type="text/template" id='game-template'>
-            
+            <a href="#board/<%= id %>"></a>
         </script>
 
         <script type="text/template" id='numberbox-template'>
@@ -156,8 +163,10 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/routes.js"></script>
         <script src="scripts/visual-numbers-view.js"></script>
+        <script src="scripts/start-view.js"></script>
         <script src="scripts/visual-numbers-top-view.js"></script>
         <script src="scripts/main-view.js"></script>
+        <script src="scripts/play-view.js"></script>
         <script src="scripts/createleague-view.js"></script>
         <script src="scripts/signin-view.js"></script>
         <script src="scripts/user.js"></script>
