@@ -10,7 +10,7 @@ var BoardView = Parse.View.extend({
 
     initialize: function(options) {
         this.data = options.data;
-
+        this.el.id = "id-" + this.data.score;
         $('.board').append(this.el);
         this.render()
     },

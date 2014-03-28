@@ -17,7 +17,6 @@ var MainRouter = Backbone.Router.extend({
                 // Execute any logic that should take place after the object is saved.
                 window.id = this.fastleague.id
                 console.log(id)
-                console.log(fastleague.get('boxes'))
 
             },
             error: function(fastleague, error) {
