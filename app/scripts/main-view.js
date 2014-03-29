@@ -4,10 +4,6 @@ var MainView = Parse.View.extend({
 
     mainTemplate: _.template($('#main-template').text()),
 
-
-
-
-
     initialize: function() {
         $('.jumbotron').html(this.el);
         this.render()
@@ -19,15 +15,5 @@ var MainView = Parse.View.extend({
         });
         this.$el.html(mainRenderedTemplate);
     },
-
-
-
-    // CreateLeagueView: function() {
-    //     new CreateLeagueView();
-    // },
-
-    // CreateSigninView: function() {
-    //     new SigninView();
-    // },
 
 });

@@ -25,6 +25,7 @@ var MainRouter = Backbone.Router.extend({
                 alert('Failed to create new object, with error code: ' + error.description);
             }
         });
+        $(".board-inside").hide();
     },
 
     loadGame: function(id) {
@@ -47,9 +48,8 @@ var MainRouter = Backbone.Router.extend({
                 window.rowNumber = game.get('rows');
                 new visualNumbersView();
                 new visualNumbersTopView();
-                $("#id-" + finalScore).css("background-color", "blue");
+                $("#id-" + finalScore).css("background-color", "rgb(113, 160, 182)");
                 new WinnerView();
-
 
             },
             error: function(object, error) {

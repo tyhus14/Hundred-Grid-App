@@ -26,7 +26,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-
+        <img src="images/stadium.png" class="img-responsive" alt="Responsive image">
         <div class="container">
             <div class="header">
             </div>
@@ -43,37 +43,21 @@
 
         <script type="text/template" id='main-template'>
             <a class="btn btn-lg" href="#board"><button type="button" class="btn btn-primary quickstart-btn">quick start</button></a>
-            
-        </script>
-
-        <script type="text/template" id='createleague-template'>
-            <input class="form-control js-name" placeholder="name" type="text">
-            <input class="form-control js-username" placeholder="username" type="text">
-            <input class="form-control js-password" placeholder="password" type="text">
-            <input class="form-control js-email" placeholder="email" type="text">
-            <button type="button" class="btn btn-primary submit-btn">Submit</button>
-        </script>
-
-        <script type="text/template" id='signin-template'>
-            <input class="form-control login-username-js" placeholder="username" type="text">
-            <input class="form-control login-password-js" placeholder="password" type="text">
-            <button type="button" class="btn btn-primary submit-sigin-button">Submit</button>
         </script>
 
         <script type="text/template" id='play-view-template'>
-            <button type="button" class="btn btn-primary play-game"><a class="btn btn-lg" href="#board">Play</a></button>
+            <a class="btn btn-lg" href="#board/"><button type="button" class="btn btn-primary play-game">Play</button></a>
         </script>
 
         <script type="text/template" id='start-view-template'>
             <a class="btn btn-lg" href="#board/<%= id %>"><button type="button" class="btn btn-primary generate-numbers">Generate Numbers</button></a>
         </script>
         <script type="text/template" id='winner-template'>
-            <p>Current winner is <%= currentWinner[0].name %></p>
+            <span>Current winner: <%= currentWinner[0].name %></span>
         </script>
 
         <script type="text/template" id='board-template'>   
             <input class="name-input" type="text" value="<%= data.name ? data.name : '' %>">
-
         </script>
 
         <script type="text/template" id='game-template'>

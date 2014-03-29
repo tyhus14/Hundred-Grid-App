@@ -21,7 +21,6 @@ var StartView = Parse.View.extend({
         this.$el.html(startViewRenderedTemplate);
     },
 
-
     Generate: function() {
         new numberGameView();
         $(".board-inside").show();

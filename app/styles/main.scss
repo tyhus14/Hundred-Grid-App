@@ -93,19 +93,17 @@ body {
  /* My stuff */
 
  .box { 
-    width: 80px;
-    height: 80px;
-    border: 1px solid black;
+    width: 75px;
+    height: 75px;
+    background: rgba(113, 160, 182, .3);
+    border: 1px solid white;
     display: inline-block;
     position: relative;
-    &.active {
-        background: blue;
-    }
  }
 
  .board {
     margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 75px;
     width: 800px;
     height: 800px;  
     position: absolute;
@@ -113,8 +111,9 @@ body {
  }
 
  .name-input {
-    width: 80px;
-    height: 80px;
+    color: white;
+    width: 75px;
+    height: 75px;
     background: none;
     border: none;
     font-size: 20px;
@@ -145,16 +144,19 @@ body {
 
 .visual-numbers {
     margin-top: 32px;
+    margin-left: 22px;
     p {
+        color: white;
         font-size: 40px;
-        margin: 0 0 23px;
+        margin: 0 0 18px;
     }
 }
 
 .visual-numbers-top {
     
     p {
-        margin: 0 53px 0px 0;
+        color: white;
+        margin: 0 49px 0px 0;
         display: inline;
         font-size: 40px;
     }
@@ -162,7 +164,24 @@ body {
 
 .visual-row-numbers {
     display: inline;
-    margin-left: 70px;
+    margin-left: 99px;
 }
 
+.container .jumbotron {
+    background: none;
+}
 
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+}
+
+.winner {
+    span {
+        color: white;
+        font-size: 50px;
+    }
+}

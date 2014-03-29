@@ -22,25 +22,5 @@ $(function() {
     finalScore = twoSlicedStrings.concat(slicedTeamAscore, slicedTeamBscore);
 
 
-    // _.where(fastleague._previousAttributes.boxes, {
-    //     score: finalScore
-    // });
-
-
-
-    // window.users = new UserCollection();
-
-
-    // users.fetch({
-    //     success: function() {
-    //         users.each(function(user) {
-    //             new ListView({
-    //                 model: user
-    //             });
-    //         })
-    //     },
-
-    // })
-
 
 })

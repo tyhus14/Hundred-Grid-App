@@ -1,9 +1,8 @@
 var WinnerView = Parse.View.extend({
 
-    className: '',
+    className: 'winner',
 
     boxTemplate: _.template($('#winner-template').text()),
-
 
     initialize: function() {
         $('.jumbotron').html(this.el);
