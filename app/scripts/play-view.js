@@ -51,6 +51,8 @@ var PlayView = Parse.View.extend({
 
         new GameView();
         new StartView();
+        $(".broncos").show();
+        $(".seahawks").show();
         console.log(fastleague.get('boxes'))
         fastleague.save();
     }

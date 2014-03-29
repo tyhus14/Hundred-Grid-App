@@ -50,6 +50,9 @@ var MainRouter = Backbone.Router.extend({
                 new visualNumbersTopView();
                 $("#id-" + finalScore).css("background-color", "rgb(113, 160, 182)");
                 new WinnerView();
+                $(".broncos").show();
+                $(".seahawks").show();
+
 
             },
             error: function(object, error) {

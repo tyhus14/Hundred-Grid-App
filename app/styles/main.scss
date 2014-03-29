@@ -189,14 +189,18 @@ body {
 
 .broncos {
     position: absolute;
-    
+    display: none;
     height: 100px;
-    margin: -149px 0px 0px 333px;
+    margin: -147px 0px 0px 333px;
 }
 
 .seahawks {
-
+    display: none;
     position: absolute;
     height: 100px;
     margin: 308px 0px 0px -217px;
+}
+
+.jumbotron {
+    margin-bottom: 100px;
 }
