@@ -1,8 +1,8 @@
-var ListView = Parse.View.extend({
+var WinnerView = Parse.View.extend({
 
     className: '',
 
-    boxTemplate: _.template($('#list-template').text()),
+    boxTemplate: _.template($('#winner-template').text()),
 
 
     initialize: function() {

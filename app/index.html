@@ -66,15 +66,15 @@
         </script>
 
         <script type="text/template" id='start-view-template'>
-            <button type="button" class="btn btn-primary generate-numbers">Generate Numbers</button>
+            <a class="btn btn-lg" href="#board/<%= id %>"><button type="button" class="btn btn-primary generate-numbers">Generate Numbers</button></a>
         </script>
-        <script type="text/template" id='list-template'>
+        <script type="text/template" id='winner-template'>
             <p>Current winner is <%= currentWinner[0].name %></p>
         </script>
 
         <script type="text/template" id='board-template'>   
             <input class="name-input" type="text" value="<%= data.name ? data.name : '' %>">
-            
+
         </script>
 
         <script type="text/template" id='game-template'>

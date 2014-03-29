@@ -30,7 +30,7 @@ var StartView = Parse.View.extend({
         window.currentWinner = _.where(fastleague._previousAttributes.boxes, {
             score: finalScore
         });
-        new ListView();
+        new WinnerView();
         $("#id-" + finalScore).css("background-color", "blue");
     },
 

@@ -46,6 +46,8 @@ var PlayView = Parse.View.extend({
             return _.extend(item[0], item[1])
         })
         fastleague.set('boxes', objectBoxes)
+        fastleague.set('columns', columnNumber)
+        fastleague.set('rows', rowNumber)
 
         new GameView();
         new StartView();

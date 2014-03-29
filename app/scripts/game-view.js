@@ -4,11 +4,6 @@ var GameView = Parse.View.extend({
 
     gameTemplate: _.template($('#game-template').text()),
 
-    events: {
-        'click .logout-btn': 'LogOut',
-
-    },
-
     initialize: function() {
         $('.board').html(this.el);
         this.render();
@@ -29,13 +24,5 @@ var GameView = Parse.View.extend({
         });
         this.$el.html(gameRenderedTemplate);
     },
-
-
-
-    LogOut: function() {
-        Parse.User.logOut();
-
-        // var currentUser = Parse.User.current();
-    }
 
 });
