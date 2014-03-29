@@ -39,6 +39,8 @@ var MainRouter = Backbone.Router.extend({
                 window.currentWinner = _.where(objectBoxes, {
                     score: finalScore
                 });
+                new numberGameView();
+                $(".board-inside").show();
                 new GameView();
                 new StartView();
                 window.columnNumber = game.get('columns');
@@ -47,6 +49,7 @@ var MainRouter = Backbone.Router.extend({
                 new visualNumbersTopView();
                 $("#id-" + finalScore).css("background-color", "blue");
                 new WinnerView();
+
 
             },
             error: function(object, error) {
