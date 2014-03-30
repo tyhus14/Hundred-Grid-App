@@ -1,8 +1,8 @@
 var MainRouter = Backbone.Router.extend({
 
     routes: {
-        'board': 'Start',
-        'board/:id': 'loadGame'
+        'game': 'Start',
+        'game/:id': 'loadGame'
     },
 
     initialize: function() {
@@ -52,8 +52,6 @@ var MainRouter = Backbone.Router.extend({
                 new WinnerView();
                 $(".broncos").show();
                 $(".seahawks").show();
-
-
             },
             error: function(object, error) {
                 // The object was not retrieved successfully.
