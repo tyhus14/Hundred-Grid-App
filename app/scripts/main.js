@@ -11,7 +11,7 @@ $(function() {
     currentUser = Parse.User.current();
 
 
-    teamAscore = "0";
+    teamAscore = "7";
     teamBscore = "0";
 
     slicedTeamAscore = teamAscore.slice(-1);
