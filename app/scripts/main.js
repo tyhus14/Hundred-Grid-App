@@ -11,8 +11,8 @@ $(function() {
     currentUser = Parse.User.current();
 
 
-    teamAscore = "7";
-    teamBscore = "3";
+    teamAscore = "0";
+    teamBscore = "0";
 
     slicedTeamAscore = teamAscore.slice(-1);
     slicedTeamBscore = teamBscore.slice(-1);
@@ -21,6 +21,4 @@ $(function() {
 
     finalScore = twoSlicedStrings.concat(slicedTeamAscore, slicedTeamBscore);
 
-
-
-})
+});

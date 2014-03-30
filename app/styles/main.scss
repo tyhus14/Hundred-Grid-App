@@ -25,8 +25,7 @@ body {
 
 /* Custom page header */
 .header {
-    border-bottom: 1px solid #e5e5e5;
-
+  
     /* Make the masthead heading the same height as the navigation */
     h3 {
         margin-top: 0;
@@ -97,14 +96,14 @@ body {
     width: 75px;
     height: 75px;
     background: rgba(113, 160, 182, .3);
-    border: 1px solid white;
+    border: 1px solid rgba(242, 242, 242, .4);
     display: inline-block;
     position: relative;
  }
 
  .board {
     margin-top: 20px;
-    margin-left: 75px;
+    margin-left: 97px;
     width: 800px;
     height: 800px;  
     position: absolute;
@@ -112,7 +111,7 @@ body {
  }
 
  .name-input {
-    color: white;
+    color: rgb(207, 207, 207);
     width: 75px;
     height: 75px;
     background: none;
@@ -145,9 +144,9 @@ body {
 
 .visual-numbers {
     margin-top: 32px;
-    margin-left: 22px;
+    margin-left: 38px;
     p {
-        color: white;
+        color: rgb(207, 207, 207);
         font-size: 40px;
         margin: 0 0 18px;
     }
@@ -156,7 +155,7 @@ body {
 .visual-numbers-top {
     
     p {
-        color: white;
+        color: rgb(207, 207, 207);
         margin: 0 49px 0px 0;
         display: inline;
         font-size: 40px;
@@ -165,7 +164,7 @@ body {
 
 .visual-row-numbers {
     display: inline;
-    margin-left: 99px;
+    margin-left: 120px;
 }
 
 .container .jumbotron {
@@ -176,13 +175,13 @@ body {
     display: block;
     max-width: 100%;
     height: auto;
-    position: absolute;
+    position: fixed;
     z-index: -1;
 }
 
 .winner {
     span {
-        color: white;
+        color: rgb(207, 207, 207);
         font-size: 50px;
     }
 }
@@ -191,16 +190,27 @@ body {
     position: absolute;
     display: none;
     height: 100px;
-    margin: -147px 0px 0px 333px;
+    margin: -170px 0px 0px 358px;
 }
 
 .seahawks {
     display: none;
     position: absolute;
     height: 100px;
-    margin: 308px 0px 0px -217px;
+    margin: 342px 0px 0px -200px;
 }
 
 .jumbotron {
     margin-bottom: 100px;
+}
+
+.header {
+    height: 60px;
+    width: 100%;
+    background: rgba(207, 207, 207, .1);
+}
+
+.logo {
+    margin-top: 16px;
+    height: 30px;
 }
