@@ -32,7 +32,7 @@ var BoardView = Parse.View.extend({
             return box.name && box.name.length
         });
         if (allInputsFilled == true) {
-            $('.generate-numbers').show();
+            $('#myModal').modal('show');
         };
 
     }
