@@ -31,6 +31,7 @@ var StartView = Parse.View.extend({
         });
         new WinnerView();
         $("#id-" + finalScore).css("background-color", "blue");
+
     },
 
 });

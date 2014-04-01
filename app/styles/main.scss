@@ -93,8 +93,8 @@ body {
  /* My stuff */
 
  .box { 
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
     background: rgba(113, 160, 182, .3);
     border: 1px solid rgba(242, 242, 242, .4);
     display: inline-block;
@@ -103,20 +103,20 @@ body {
 
  .board {
     margin-top: 20px;
-    margin-left: 97px;
-    width: 800px;
-    height: 800px;  
+    margin-left: 146px;
+    width: 700px;
+    height: 700px;  
     position: absolute;
     display: inline-block;
  }
 
  .name-input {
     color: rgb(207, 207, 207);
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
     background: none;
     border: none;
-    font-size: 20px;
+    font-size: 17px;
     text-align: center;
  }
 
@@ -128,7 +128,7 @@ body {
 
 .board-inside {
     margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 50px;
     position: absolute;
     width: 800px;
     height: 800px;
@@ -144,27 +144,27 @@ body {
 
 .visual-numbers {
     margin-top: 32px;
-    margin-left: 38px;
+    margin-left: 91px;
     p {
         color: rgb(207, 207, 207);
-        font-size: 40px;
-        margin: 0 0 18px;
+        font-size: 37px;
+        margin: 0 0 12px;
     }
 }
 
 .visual-numbers-top {
     
     p {
-        color: rgb(207, 207, 207);
-        margin: 0 49px 0px 0;
+        color: #cfcfcf;
+        margin: 0 41px 0px 0;
         display: inline;
-        font-size: 40px;
+        font-size: 37px;
     }
 }
 
 .visual-row-numbers {
     display: inline;
-    margin-left: 120px;
+    margin-left: 166px;
 }
 
 .container .jumbotron {
@@ -197,7 +197,7 @@ body {
     display: none;
     position: absolute;
     height: 100px;
-    margin: 342px 0px 0px -200px;
+    margin: 296px 0px 0px -136px;
 }
 
 .jumbotron {
@@ -225,4 +225,15 @@ body {
         font-size: 16px;
         text-align: left;
     }
+}
+
+.generate-numbers {
+    display: none;
+}
+
+.startview {
+    z-index: 1;
+    text-align: center;
+    margin: 0 auto;
+    position: fixed;
 }

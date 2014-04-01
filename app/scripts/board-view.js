@@ -13,6 +13,7 @@ var BoardView = Parse.View.extend({
         this.el.id = "id-" + this.data.score;
         $('.board').append(this.el);
         this.render()
+
     },
 
     render: function() {
@@ -26,7 +27,14 @@ var BoardView = Parse.View.extend({
         console.log('cool')
         this.data.name = this.$el.find('.name-input').val();
         console.log('this.data is', this.data)
-        fastleague.save()
+        fastleague.save();
+        allInputsFilled = _.every(objectBoxes, function(box) {
+            return box.name && box.name.length
+        });
+        if (allInputsFilled == true) {
+            $('.generate-numbers').show();
+        };
+
     }
 
 });

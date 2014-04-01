@@ -39,12 +39,12 @@
             <img src="images/broncos.png" class="broncos">
             <img src="images/seahawks.png" class="seahawks">
 
-           
-
         </div>
 
+                         
+
         <script type="text/template" id='main-template'>
-            <a class="btn btn-lg" href="#game"><button type="button" class="btn btn-primary quickstart-btn">quick start</button></a>
+            <a class="btn btn-lg" href="#rules"><button type="button" class="btn btn-primary quickstart-btn">quick start</button></a>
         </script>
 
         <script type="text/template" id='play-view-template'>
@@ -53,12 +53,13 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 </p>
             </div>
-            <a class="btn btn-lg" href="#game/"><button type="button" class="btn btn-primary play-game">Play</button></a>
+            <a class="btn btn-lg" href="#game"><button type="button" class="btn btn-primary play-game">Play</button></a>
         </script>
 
-        <script type="text/template" id='start-view-template'>
-            <a class="btn btn-lg" href="#game/<%= id %>"><button type="button" class="btn btn-primary generate-numbers">Generate Numbers</button></a>
+        <script type="text/template" id='start-view-template' class="col-xs-12">
+           <a class="btn btn-lg" href="#game/<%= id %>"><button type="button" class="btn btn-primary generate-numbers">Generate Numbers</button></a>
         </script>
+
         <script type="text/template" id='winner-template'>
             <span>Current winner: <%= currentWinner[0].name %></span>
         </script>
