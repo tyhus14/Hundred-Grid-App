@@ -1,5 +1,5 @@
 var PlayView = Parse.View.extend({
-
+    // this view creates a new board for each new league created
     className: 'Playview',
 
     PlayViewTemplate: _.template($('#play-view-template').text()),
@@ -20,7 +20,7 @@ var PlayView = Parse.View.extend({
         });
         this.$el.html(PlayViewRenderedTemplate);
     },
-
+    // play creates the shuffles numbers
     Play: function() {
         rowNumber = _.shuffle([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
         columnNumber = _.shuffle([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
@@ -28,6 +28,7 @@ var PlayView = Parse.View.extend({
         var row = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
         var column = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
 
+        // this is the main function to make sure the rows and columns correspond correctly
         function createSets(total, rows, columns, label) {
             return _.flatten(_.map(_.range(total), function(x) {
                 return _.map(rows, function(row) {
@@ -42,9 +43,13 @@ var PlayView = Parse.View.extend({
         lettersArray = createSets(10, row, column, 'location');
 
         allBoxes = _.zip(lettersArray, numbersArray);
-        objectBoxes = _.map(allBoxes, function(item, index) {
+
+        // objectBoxes is an array with all 100 boxes 
+        window.objectBoxes = _.map(allBoxes, function(item, index) {
             return _.extend(item[0], item[1])
         })
+
+        // this sends the info to parse
         fastleague.set('boxes', objectBoxes)
         fastleague.set('columns', columnNumber)
         fastleague.set('rows', rowNumber)
@@ -55,6 +60,7 @@ var PlayView = Parse.View.extend({
         $(".seahawks").show();
         console.log(fastleague.get('boxes'))
         fastleague.save();
+
     }
 
 });

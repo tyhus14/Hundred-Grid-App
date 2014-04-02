@@ -229,6 +229,7 @@ body {
 
 .generate-numbers {
     display: none;
+    margin: 272px;
 }
 
 .startview {
@@ -236,4 +237,16 @@ body {
     text-align: center;
     margin: 0 auto;
     position: fixed;
+}
+
+.shadow {
+    z-index: -1;
+    position: fixed;
+    background: rgba(55, 55, 55, 0.5);
+    height: 100%;
+    width: 100%;
+
+    &.active {
+        z-index: 1;
+    }
 }

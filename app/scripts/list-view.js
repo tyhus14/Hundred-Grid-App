@@ -1,5 +1,5 @@
 var WinnerView = Parse.View.extend({
-
+    // this displays the winner at the top of the page
     className: 'winner',
 
     boxTemplate: _.template($('#winner-template').text()),

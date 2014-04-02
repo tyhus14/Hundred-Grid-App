@@ -24,13 +24,22 @@ var StartView = Parse.View.extend({
     Generate: function() {
         new numberGameView();
         $(".board-inside").show();
+
+        // these views display the shuffled numbers 
         new visualNumbersView();
         new visualNumbersTopView();
-        window.currentWinner = _.where(fastleague._previousAttributes.boxes, {
-            score: finalScore
-        });
-        new WinnerView();
-        $("#id-" + finalScore).css("background-color", "blue");
+        $('.shadow').removeClass('active')
+        // currentWinner finds where the score property matches the score of the game
+        // window.currentWinner = _.where(fastleague._previousAttributes.boxes, {
+        //     score: finalScore
+        // });
+
+        // this view displays who the current winner is
+        // new WinnerView();
+        // fetchScoreQuery()
+        // this changes the background of the box that corresponds with the correct score of the game
+        // $("#id-" + finalScore).addClass("background-color", "blue");
+        // setInterval(fetchScoreQuery, 1000);
 
     },
 

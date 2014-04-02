@@ -34,12 +34,16 @@ var MainRouter = Backbone.Router.extend({
         query.get(id, {
             success: function(game) {
                 console.log(game)
+                // retrieves array of objects
                 window.objectBoxes = game.get('boxes');
                 new PlayView();
                 fastleague = game
+
+                // looks through array of objects to see where propety score is equal to score of game aka finalScore
                 window.currentWinner = _.where(objectBoxes, {
-                    score: finalScore
+                    score: window.finalScore
                 });
+
                 new numberGameView();
                 $(".board-inside").show();
                 new GameView();
@@ -48,12 +52,14 @@ var MainRouter = Backbone.Router.extend({
                 window.rowNumber = game.get('rows');
                 new visualNumbersView();
                 new visualNumbersTopView();
-                $("#id-" + finalScore).css("background-color", "rgb(113, 160, 182)");
-                new WinnerView();
+                $("#id-" + window.finalScore).css("background-color", "rgb(113, 160, 182)");
+
+                // shows logos
                 $(".broncos").show();
                 $(".seahawks").show();
 
-
+                setInterval(fetchScoreQuery, 6000)
+                // new WinnerView();
             },
             error: function(object, error) {
                 // The object was not retrieved successfully.
