@@ -292,6 +292,7 @@ body {
 }
 
 .teamA-score {
+    display: none;
     box-shadow: 1px 1px 1px 1px;
     border: 1px solid white;
     height: 150px;
@@ -299,4 +300,22 @@ body {
     margin: -102px 0px 0px -182px;
     position: absolute;
     width: 280px;
+}
+
+.squarelogo {
+    padding-top: 114px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.quickstart-btn {
+    background-color: rgba(86, 191, 241, 0.3);
+    margin-top: 20px;
+    border: none;
+
+    &:hover {
+        background-color: rgba(86, 191, 241, 0.8);
+        border: none;
+    }
 }
