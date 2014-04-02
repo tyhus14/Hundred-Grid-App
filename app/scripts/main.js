@@ -42,6 +42,7 @@ $(function() {
                 $(".broncos").show();
                 $(".seahawks").show();
                 new WinnerView();
+                new teamAView()
 
 
 

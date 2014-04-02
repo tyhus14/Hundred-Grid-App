@@ -250,3 +250,53 @@ body {
         z-index: 1;
     }
 }
+
+.teamAview {
+    
+   
+    span {
+        margin-top: 15px;
+        font-size: 20px;
+        color: white;
+        margin-left: 90px;
+        display: block;
+    }
+
+    h1 {
+        margin-right: 60px;
+        font-size: 60px;
+        color: white;
+        display: inline;
+    }
+    h6 {
+    font-size: 16px;
+    color:  white;
+    display: inline;
+    margin-right: 15px;
+    }
+    position: absolute;
+    height: 20px;
+
+    .row-one {
+        text-align: center;
+        width: 100%;
+        margin-left: 35px;
+    }
+
+    .row-two {
+        width: 100%;
+        margin-left: 20px;
+        text-align: center;
+    }
+ 
+}
+
+.teamA-score {
+    box-shadow: 1px 1px 1px 1px;
+    border: 1px solid white;
+    height: 150px;
+    background-color: rgba(86, 191, 241, 0.3);
+    margin: -102px 0px 0px -182px;
+    position: absolute;
+    width: 280px;
+}

@@ -32,6 +32,7 @@
         <div class="container">
             
             <div class="jumbotron"></div>
+            <div class="teamA-score"></div>
             <div class="column-numbers"></div>
             <div class="board"></div>
             <div class="board-inside"></div>
@@ -112,6 +113,17 @@
        </div>
         </script>
 
+        <script type="text/template" id="teamA-template">
+            <span>Scoreboard </span>
+            <div class="row-one">
+                <h1 class="teamBscoreboard"><%=window.teamAscore %></h1>
+                <h1 class="teamAscoreboard"><%=window.teamBscore %></h1>
+            </div>
+            <div class="row-two">
+                <h6 class="left-team"> SEAHAWKS<h6>
+                <h6 class="right-team">BRONCOS<h6>
+        </script>
+
 
         
         
@@ -169,6 +181,7 @@
         <script src="scripts/league.js"></script>
         <script src="scripts/list-view.js"></script>
         <script src="scripts/number-box-view.js"></script>
+        <script src="scripts/teamA-view.js"></script>
         <script src="scripts/number-game-view.js"></script>
         <script src="scripts/game-view.js"></script>
         <script src="scripts/board-view.js"></script>

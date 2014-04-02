@@ -57,8 +57,8 @@ var MainRouter = Backbone.Router.extend({
                 // shows logos
                 $(".broncos").show();
                 $(".seahawks").show();
-
-                setInterval(fetchScoreQuery, 6000)
+                new teamAView()
+                setInterval(fetchScoreQuery, 2000)
                 // new WinnerView();
             },
             error: function(object, error) {
