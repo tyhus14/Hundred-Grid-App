@@ -52,12 +52,14 @@ var MainRouter = Backbone.Router.extend({
                 window.rowNumber = game.get('rows');
                 new visualNumbersView();
                 new visualNumbersTopView();
-                $("#id-" + window.finalScore).css("background-color", "rgb(113, 160, 182)");
+                $("#id-" + window.finalScore).css("background-color", "rgba(86, 191, 241, 0.3)");
 
                 // shows logos
                 $(".broncos").show();
                 $(".seahawks").show();
                 $(".teamA-score").show();
+                $(".squarelogoboard").show();
+
                 new teamAView()
                 setInterval(fetchScoreQuery, 2000)
                 // new WinnerView();

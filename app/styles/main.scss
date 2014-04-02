@@ -228,8 +228,14 @@ body {
 }
 
 .generate-numbers {
+    background: #497B93;
     display: none;
+    border: none;
     margin: 272px;
+    &:hover {
+        background-color: #6BAECF;
+        border: none;
+    }
 }
 
 .startview {
@@ -303,6 +309,7 @@ body {
 }
 
 .squarelogo {
+    height: 200px;
     padding-top: 114px;
     display: block;
     text-align: center;
@@ -315,7 +322,23 @@ body {
     border: none;
 
     &:hover {
-        background-color: rgba(86, 191, 241, 0.8);
+        background-color: rgba(86, 191, 241, 0.6);
         border: none;
     }
+}
+
+.game-rules {
+    p {
+        margin-left: 100px;
+        color: rgb(207, 207, 207);
+       margin-top: 10px;
+       font-size: 16px;
+    }
+}
+
+.squarelogoboard {
+    position: absolute;
+    height: 50px;
+    margin: -231px 0px 0px -230px;
+    display: none;
 }

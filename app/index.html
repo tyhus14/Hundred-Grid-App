@@ -37,6 +37,7 @@
             <div class="board"></div>
             <div class="board-inside"></div>
             <div class="row-numbers"></div>
+            <img src="images/squarelogo.png" class="squarelogoboard">
             <img src="images/broncos.png" class="broncos">
             <img src="images/seahawks.png" class="seahawks">
 
@@ -52,8 +53,13 @@
         <script type="text/template" id='play-view-template'>
             <div class="game-rules">
                 <h1>Rules</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
+                
+                    <p>1. Decide how many users are playing and how many entries are assigned per user.</p>
+                    <p>2. Take turns inputing name into squares.</p>
+                    <p>3. Once all squares are filled, generate numbers (numbers display in random order).</p>
+                    <p>4. Have fun!</p>
+                    <p>5. Earn bragging rights!</p>
+                
             </div>
             <a class="btn btn-lg" href="#game"><button type="button" class="btn btn-primary quickstart-btn play-game">Play</button></a>
         </script>
@@ -115,6 +121,7 @@
         </script>
 
         <script type="text/template" id="teamA-template">
+
             <span>Scoreboard </span>
             <div class="row-one">
                 <h1 class="teamBscoreboard"><%=window.teamAscore %></h1>

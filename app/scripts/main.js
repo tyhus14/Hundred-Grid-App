@@ -33,7 +33,7 @@ $(function() {
                 //final score is the combined score of each team
                 window.finalScore = twoSlicedStrings.concat(slicedTeamAscore, slicedTeamBscore);
                 $('.box').css('background-color', "rgba(113, 160, 182, .3)");
-                $("#id-" + window.finalScore).css("background-color", "rgb(113, 160, 182)");
+                $("#id-" + window.finalScore).css("background-color", "rgba(86, 191, 241, 0.6)");
 
                 window.currentWinner = _.where(objectBoxes, {
                     score: window.finalScore
