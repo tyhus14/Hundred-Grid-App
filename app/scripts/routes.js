@@ -61,7 +61,7 @@ var MainRouter = Backbone.Router.extend({
                 $(".squarelogoboard").show();
 
                 new teamAView()
-                setInterval(fetchScoreQuery, 2000)
+                setInterval(fetchScoreQuery, 1000)
                 // new WinnerView();
             },
             error: function(object, error) {
